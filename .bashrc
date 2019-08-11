@@ -20,7 +20,6 @@ alias log="git log"
 alias logo="git log --oneline"
 alias push="git push origin HEAD"
 
-
 # git-prompt
 source ~/.modules/git-prompt.sh
 export PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
