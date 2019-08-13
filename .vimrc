@@ -7,6 +7,7 @@ set showcmd
 
 " View Settings
 set number
+set ruler
 set cursorline
 "set cursorcolumn
 set smartindent
@@ -15,6 +16,11 @@ set matchtime=1
 set wildmode=list:longest
 
 syntax enable
+filetype plugin on
+filetype indent on
+
+" netrw Settings
+let g:netrw_altv = 1 " vで新しいウィンドウを開く際に右側に開く
 
 " Tab Settings
 set list lcs=tab:\|\ 
@@ -31,6 +37,8 @@ set hlsearch
 " Key Settings
 nnoremap Y y$
 nnoremap S S<Esc>
+
+command Vimrc split ~/.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " End My Settings
@@ -67,6 +75,12 @@ if dein#load_state('~/.cache/dein')
 
   " Indent line
   call dein#add('Yggdroot/indentLine')
+
+  " Auto close parentheses
+  call dein#add('cohama/lexima.vim')
+
+  " Python autocompletion
+  call dein#add('davidhalter/jedi-vim')
 
   " Required:
   call dein#end()
