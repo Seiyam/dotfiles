@@ -1,12 +1,25 @@
 
 # Setting Files
 alias bashrc="vim ~/.bashrc"
+alias bashprofile="vim ~/.bash_profile"
 alias vimrc="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
 
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
 alias so="source"
+
+if [ `uname` = 'Darwin' ]; then
+  alias ls='ls -G'
+else
+  alias ls='ls --color=auto'
+fi
 alias ll='ls -l'
 alias la='ls -la'
+
+alias ..='cd ..'
 alias cdlast='cd $(ls -pt | grep /$ | head -1)'
 
 # Git
