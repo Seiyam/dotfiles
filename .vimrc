@@ -74,12 +74,16 @@ if dein#load_state('~/.cache/dein')
 
   " Git plugin
   call dein#add('tpope/vim-fugitive')
+  call dein#add('airblade/vim-gitgutter')
 
   " Highlight trailing whitespace
   call dein#add('bronson/vim-trailing-whitespace')
 
   " Indent line
   call dein#add('Yggdroot/indentLine')
+
+  " Comment plugin
+  call dein#add('tomtom/tcomment_vim')
 
   " Auto close parentheses
   call dein#add('cohama/lexima.vim')
