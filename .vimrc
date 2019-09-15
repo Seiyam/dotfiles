@@ -87,6 +87,10 @@ if dein#load_state('~/.cache/dein')
   " Python autocompletion
   call dein#add('davidhalter/jedi-vim')
 
+  " surround.vim
+  call dein#add('tpope/vim-surround')
+  call dein#add('tpope/vim-repeat')
+
   " Required:
   call dein#end()
   call dein#save_state()
