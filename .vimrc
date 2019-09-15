@@ -15,6 +15,11 @@ set showmatch
 set matchtime=1
 set wildmode=list:longest
 
+colorscheme ron
+if &diff
+  colorscheme pablo
+endif
+
 syntax enable
 filetype plugin on
 filetype indent on
