@@ -16,8 +16,9 @@ if [ `uname` = 'Darwin' ]; then
 else
   alias ls='ls --color=auto'
 fi
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='ls -lF'
+alias la='ls -laF'
+alias kk='ll'
 
 alias ..='cd ..'
 alias cdlast='cd $(ls -pt | grep /$ | head -1)'
