@@ -21,7 +21,7 @@ alias la='ls -laF'
 alias kk='ll'
 
 alias ..='cd ..'
-alias cdlast='cd $(ls -pt | grep /$ | head -1)'
+alias cdl='cd $(ls -pt | grep /$ | head -1)'
 
 # Git
 alias st="git status"
@@ -33,6 +33,8 @@ alias civ="git commit -v"
 alias log="git log"
 alias logo="git log --oneline"
 alias push="git push origin HEAD"
+alias show="git show"
+alias fetch="git fetch --prune"
 
 # git-prompt
 source ~/.modules/git-prompt.sh
