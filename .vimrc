@@ -42,6 +42,7 @@ set hlsearch
 " Key Settings
 nnoremap Y y$
 nnoremap S S<Esc>
+map q: :q
 
 command Vimrc split ~/.vimrc
 
