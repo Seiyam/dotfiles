@@ -13,6 +13,7 @@ alias so="source"
 
 if [ `uname` = 'Darwin' ]; then
   alias ls='ls -G'
+  alias chrome="open /Applications/Google\ Chrome.app"
 else
   alias ls='ls --color=auto'
 fi
@@ -26,6 +27,7 @@ alias cdl='cd $(ls -pt | grep /$ | head -1)'
 # Git
 alias st="git status"
 alias co="git checkout"
+alias br="git branch"
 alias di="git diff --color-words"
 alias dic="git diff --color-words --cached"
 alias st="git status"
