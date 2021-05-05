@@ -22,12 +22,14 @@ alias la='ls -laF'
 alias kk='ll'
 
 alias ..='cd ..'
+alias cdw='cd ~/work/'
 alias cdl='cd $(ls -pt | grep /$ | head -1)'
 
 # Git
 alias st="git status"
 alias co="git checkout"
 alias br="git branch"
+alias bra="git branch -a"
 alias di="git diff --color-words"
 alias dic="git diff --color-words --cached"
 alias st="git status"
